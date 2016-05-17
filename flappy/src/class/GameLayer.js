@@ -105,6 +105,7 @@ var GameLayer = (function () {
 
     var _scoreLayerInit = function() {
         _scoreLayer = new laya.display.Sprite();
+        _scoreLayer.visible = false;
         Laya.stage.addChild(_scoreLayer);
 
         var _bitmapFont = new laya.display.BitmapFont();
