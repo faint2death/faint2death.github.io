@@ -13,9 +13,8 @@ var Main = (function() {
     var _initStage = function() {
         Laya.init(FB.CANVAS.WIDTH, FB.CANVAS.HEIGHT, laya.webgl.WebGL);
         if (laya.utils.Browser.onMobile) {
-            //Laya.stage.sizeMode = laya.display.Stage.SIZE_FULL_WIDTH;
             Laya.stage.screenMode = laya.display.Stage.SCREEN_VERTICAL;
-            Laya.stage.scaleMode = laya.display.Stage.SCALE_SHOWALL;
+            Laya.stage.scaleMode = laya.display.Stage.SCALE_NOBORDER;
         } else {
             console.log("PC width:" + laya.utils.Browser.width + " height:" + laya.utils.Browser.height);
             Laya.stage.alignH = laya.display.Stage.ALIGN_CENTER;
